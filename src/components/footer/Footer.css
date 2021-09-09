@@ -1,0 +1,66 @@
+#footer {
+    position: fixed;
+    background-color: #EBEAEB;
+    width: 100%;
+    height: 5%;
+    min-height: 5%;
+    display: flex;
+    bottom:0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#apiButton {
+    font-size: 14px!important;
+    line-height: 1.5;
+    height: 1.5rem;
+    border-radius: 6px;
+    background-color:#39C7A5;
+    color: white;
+    -webkit-box-align: center;
+    border-color: transparent;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#keySection {
+    min-width: 50%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+#apiButton {
+    margin: 15px;
+}
+#keySection label {
+    margin-right: 15px;
+}
+#localizationContainer {
+    margin-right: 5%;
+}
+#localizationContainer button {
+
+    line-height: 1.5;
+    border-radius: 6px;
+    padding: 2px;
+    background-color:transparent;
+    -webkit-box-align: center;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#inputdestroy {
+    background: white;
+    border: none;
+    right: 1%;
+
+    top:2%;
+    margin-left: -22px;
+    z-index: 1;
+}
+#inputdestroy:hover{
+    cursor: pointer;
+}
+#localizationContainer button:hover {
+    background-color: rgba(57,199,165,0.3);
+}

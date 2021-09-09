@@ -1,0 +1,112 @@
+#modalBackground {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#Modal {
+    display: flex;
+    max-height:470px;
+    flex-direction: row;
+    background: white;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    min-width: 1000px;
+    z-index: 4;
+}
+#Modal section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex:1;
+}
+#properties {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+#closeButton {
+    background: none;
+    border: none;
+    right: 1%;
+    top:2%;
+    margin-top: 1%;
+    margin-right: 1%;
+    position: absolute;
+    z-index: 1;
+}
+#closeButton:hover {
+    cursor: pointer;
+}
+#hero-image{
+    max-width: 500px;
+}
+#info-modal {
+    margin-top:30px;
+}
+#info-modal p {
+    max-width: 90%;
+}
+#Hero{
+ max-height: 480px;
+    max-width: 480px;
+}
+
+.property {
+    display: flex;
+    border-radius: 6px;
+    padding: 1px 4px 3px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color:white;
+}
+.property.red {
+    background-color: rgba(244,70,72,1);
+}
+.property.green {
+    background-color: rgba(83,195,81,1);
+}
+@media (max-width: 65em) {
+    #Modal {
+        max-width: 100%;
+        top:0%;
+        bottom:0%;
+        max-height: 100%;
+        flex-direction: column;
+        min-width: 100%;
+    }
+    #hero-image{
+        max-width: 100%;
+        height: auto;
+    }
+    #Hero{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #properties {
+        padding-top: 10%;
+        position: relative;
+    }
+
+
+    #info-modal p {
+    padding: 3%;
+    }
+}
